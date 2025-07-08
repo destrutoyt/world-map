@@ -1,59 +1,65 @@
-# WorldMap
+# Interactive World Map
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.5.
+An interactive, data-driven world map built with Angular that fetches real-time country data from the World Bank API.
 
-## Development server
+---
 
-To start a local development server, run:
+## Table of Contents
 
-```bash
-ng serve
-```
+- [Project Overview](#project-overview)  
+- [Features](#features)  
+- [Technologies Used](#technologies-used)  
+- [Getting Started](#getting-started)  
+- [Usage](#usage)  
+- [API](#api)  
+- [Contributing](#contributing)  
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## Project Overview
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+This project is an Angular-based web application that displays an interactive world map. Users can explore countries and retrieve relevant data such as population and other statistics using the World Bank API. It demonstrates usage of Angular services, HTTP client integration, and reactive programming with Observables.
 
-```bash
-ng generate component component-name
-```
+---
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Features
 
-```bash
-ng generate --help
-```
+- Interactive world map visualization  
+- Country-specific data retrieval via World Bank API  
+- Display of population and other country metrics  
+- Modular and clean Angular service architecture  
+- Responsive UI  
 
-## Building
+---
 
-To build the project run:
+## Technologies Used
 
-```bash
-ng build
-```
+- Angular (v20.0.5)  
+- TypeScript  
+- RxJS  
+- Angular HttpClientModule  
+- World Bank API  
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+---
 
-## Running unit tests
+## Getting Started
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+### Prerequisites
 
-```bash
-ng test
-```
+- Node.js (v16 or later recommended)  
+- npm or yarn  
+- Angular CLI  
 
-## Running end-to-end tests
+### Usage
+Click on any country on the map to fetch and view detailed information.
+Data is dynamically loaded via the WorldBankAPI Angular service.
 
-For end-to-end (e2e) testing, run:
+### API
+Uses the World Bank API to get:
+Country info by country ID
+Population data
 
-```bash
-ng e2e
-```
+Requests are made through Angular's HttpClient inside the WorldBankAPI service.
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### Contributing
+Contributions are welcome! Please submit issues or pull requests.
